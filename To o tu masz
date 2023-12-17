@@ -1,0 +1,20 @@
+import random
+qwert = 0
+wew = ()
+weq = ()
+
+weq=int(input("Liczba od:"))
+wew=int(input("Liczba do:"))
+losowa = random.randint(weq, wew)
+print("Początek:", losowa)
+
+while losowa != 1:
+    qwert += 1
+    if losowa % 2 == 0:
+        losowa //= 2
+        print("A", losowa)
+    else:
+        losowa = losowa * 3 + 1
+        print("V", losowa)
+print("Koniec", "Zapętliło", qwert)
+input()
